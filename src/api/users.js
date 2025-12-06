@@ -1,7 +1,9 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api",
+  baseURL:
+    import.meta.env.VITE_API_URL ||
+    "https://user-manager-api-n5dx.onrender.com/api",
 });
 
 console.log("Loaded API URL:", import.meta.env.VITE_API_URL);
