@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getAnalytics } from "../api/analytics";
+import { getAnalytics } from "../api/users";
 import WidgetChart from "./WidgetChart";
 import CountryPieChart from "./CountryPieChart";
 import StateLineChart from "./StateLineChart";

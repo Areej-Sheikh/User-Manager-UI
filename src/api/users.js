@@ -32,6 +32,11 @@ export const createUser = (data) => API.post("/users", data);
 export const updateUser = (id, data) => API.put(`/users/${id}`, data);
 export const deleteUser = (id) => API.delete(`/users/${id}`);
 export const notifyUsers = (payload) => API.post("/users/notify", payload);
-export const getAnalytics = () => API.get("/users/analytics/users-by-location");
-
 export const getUser = (id) => API.get(`/users/${id}`);
+
+export const getAnalytics = async () => {
+  console.log("[API] Fetching analytics...");
+  const res = await API.get("/users/analytics/users-by-location");
+  console.log("[API] Analytics received:", res.data);
+  return res.data;
+};

@@ -13,6 +13,7 @@ import Lenis from "@studio-freight/lenis";
 
 const App = () => {
   const lenisRef = useRef(null);
+console.log("Loaded API URL:", import.meta.env.VITE_API_URL);
 
   useEffect(() => {
     lenisRef.current = new Lenis({
